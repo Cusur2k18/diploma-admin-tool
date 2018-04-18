@@ -1,0 +1,46 @@
+{
+  "name": "Event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "career": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "startDateTime": {
+      "type": "date",
+      "required": true
+    },
+    "endDateTime": {
+      "type": "date",
+      "required": true
+    },
+    "coverImg": {
+      "type": "string"
+    },
+    "qrCode": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
