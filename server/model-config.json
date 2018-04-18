@@ -34,5 +34,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "BaseUSer": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Student": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Staff": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Student",
+  "plural": "students",
+  "base": "BaseUser",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "studentCode": {
+      "type": "string",
+      "required": true
+    },
+    "career": {
+      "type": "string",
+      "required": true
+    },
+    "careerGrade": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Staff",
+  "plural": "staffs",
+  "base": "BaseUser",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "digitalSignature": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
