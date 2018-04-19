@@ -1,36 +1,28 @@
 {
-  "name": "Student",
-  "plural": "students",
-  "base": "BaseUser",
+  "name": "Enrollment",
+  "plural": "enrollments",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "studentCode": {
+    "eventId": {
       "type": "string",
       "required": true
     },
-    "career": {
+    "userId": {
       "type": "string",
       "required": true
     },
-    "careerGrade": {
-      "type": "string"
+    "attended": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "validations": [],
-  "relations": {
-    "enrollments": {
-      "type": "hasMany",
-      "model": "Event",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      },
-      "through": "Enrollment"
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",
@@ -43,13 +35,6 @@
       "principalType": "ROLE",
       "principalId": "$authenticated",
       "permission": "ALLOW"
-    },
-    {
-      "accessType": "EXECUTE",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "ALLOW",
-      "property": "find"
     }
   ],
   "methods": {}
