@@ -1,0 +1,21 @@
+{
+  "name": "datosAlumnoResponse",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "forceId": "false",
+  "excludeBaseProperties": [
+    "id"
+  ],
+  "properties": {
+    "return": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

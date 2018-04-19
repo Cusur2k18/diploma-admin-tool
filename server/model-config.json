@@ -58,5 +58,33 @@
   "Managers": {
     "dataSource": "db",
     "public": true
+  },
+  "soap_WSEscolarPortBinding": {
+    "dataSource": null,
+    "public": true
+  },
+  "validarUsuario": {
+    "dataSource": null,
+    "public": true
+  },
+  "validarUsuarioResponse": {
+    "dataSource": null,
+    "public": true
+  },
+  "datosAlumno": {
+    "dataSource": null,
+    "public": true
+  },
+  "datosAlumnoResponse": {
+    "dataSource": null,
+    "public": true
+  },
+  "carrerasAlumno": {
+    "dataSource": null,
+    "public": true
+  },
+  "carrerasAlumnoResponse": {
+    "dataSource": null,
+    "public": true
   }
 }

@@ -1,0 +1,24 @@
+{
+  "name": "validarUsuario",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "forceId": "false",
+  "excludeBaseProperties": [
+    "id"
+  ],
+  "properties": {
+    "pCodigo": {
+      "type": "string"
+    },
+    "pNip": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

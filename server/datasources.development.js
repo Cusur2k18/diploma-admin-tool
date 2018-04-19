@@ -1,12 +1,8 @@
-{
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
-  "udg": {
+module.exports = {
+  udg: {
     "url": "",
     "name": "udg",
-    "wsdl": "",
+    "wsdl": process.env.UDG_SOAP_SERVICE_URL,
     "remotingEnabled": true,
     "connector": "soap"
   }
