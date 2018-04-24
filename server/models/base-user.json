@@ -5,6 +5,10 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+    "Timestamps": {},
+    "Uuid": {}
+  },
   "properties": {
     "firstName": {
       "type": "string",

@@ -9,5 +9,15 @@
     "wsdl": "",
     "remotingEnabled": true,
     "connector": "soap"
+  },
+  "cusurdb": {
+    "host": "",
+    "port": 0,
+    "url": "",
+    "database": "",
+    "password": "",
+    "name": "cusurdb",
+    "user": "",
+    "connector": "postgresql"
   }
 }

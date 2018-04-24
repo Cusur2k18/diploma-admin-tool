@@ -14,49 +14,49 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "cusurdb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": false
   },
   "BaseUser": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": false
   },
   "Student": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": true
   },
   "Staff": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": true
   },
   "Event": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": true
   },
   "Enrollment": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": true
   },
   "Managers": {
-    "dataSource": "db",
+    "dataSource": "cusurdb",
     "public": true
   },
   "soap_WSEscolarPortBinding": {
