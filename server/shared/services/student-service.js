@@ -1,14 +1,26 @@
 'use strict';
 
-class StudentService {
+const app = require('../../server');
+const BaseApiService = require('./base-api-service');
 
-  static validateCredentials(ctx, next) {
-    let studentCode = ctx.req.username;
-    let nip = ctx.req.password;
-    console.log('studentCode: ', studentCode);
-    console.log('nip: ', nip);
+class StudentService extends BaseApiService {
+  static get model() {
+    return app.models.Student;
+  }
 
-    next();
+  static validateCredentials(ctx, _, next) {
+    let studentCode = ctx.req.body.username;
+    let nip = ctx.req.body.password;
+    const udgalumno = app.models.DatosAlumno
+    udgalumno.datosAlumno({pCodigo: studentCode, pNip: nip }, function (err, response) {
+      if (err) return next(new Error(err));
+
+      var result = response;
+      // cb(err, result);
+      console.log(result);
+      ctx.res.studentData = response;
+      return next(err, response);
+    });
   }
 
 }

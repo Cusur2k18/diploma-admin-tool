@@ -1,6 +1,7 @@
 const server = require('../../server');
 const ds = server.dataSources.cusurdb;
-const tables = ['User', 'Student', 'Staff', 'Managers', 'Event', 'Enrollment'];
+const tables = ['User', 'Student', 'Staff', 'Managers', 'Event', 'Enrollment', 'AccessToken',
+                'ACL', 'RoleMapping', 'Role'];
 
 function Migrate() {
   ds.automigrate(tables, function(er) {

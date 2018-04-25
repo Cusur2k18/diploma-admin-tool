@@ -25,4 +25,6 @@ function CreateRoles() {
   })
 }
 
+CreateRoles();
+
 module.exports = CreateRoles;

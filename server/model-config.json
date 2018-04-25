@@ -36,7 +36,7 @@
     "public": false
   },
   "BaseUser": {
-    "dataSource": "cusurdb",
+    "dataSource": "db",
     "public": false
   },
   "Student": {
@@ -60,31 +60,31 @@
     "public": true
   },
   "soap_WSEscolarPortBinding": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "validarUsuario": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "validarUsuarioResponse": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "datosAlumno": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "datosAlumnoResponse": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "carrerasAlumno": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   },
   "carrerasAlumnoResponse": {
-    "dataSource": null,
+    "dataSource": "udg",
     "public": true
   }
 }
