@@ -44,7 +44,6 @@ class StudentService extends BaseApiService {
         });
       },
       (data, callback) => {
-        console.log('data: ', data);
 
         if (data.error) return callback(new Error(data.error));
 
@@ -59,7 +58,6 @@ class StudentService extends BaseApiService {
               username: data.codigo,
               password: data.nip
             }
-        console.log('studentModel: ', studentModel);
 
         this.model.findOrCreate(
           { where: {studentCode: data.codigo} }, 
