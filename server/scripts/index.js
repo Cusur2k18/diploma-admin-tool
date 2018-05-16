@@ -4,10 +4,10 @@ const CreateUser = require('./seeds/create-users');
 
 
 // Migrate all the tables
-Migrate()
+// Migrate()
 
 // Create the basic roles
-CreateRoles()
+// CreateRoles()
 
 // Create an admin user
-CreateUser();
+// CreateUser();

@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "migrate": "node server/scripts/migrations/migrations.js"
   },
   "dependencies": {
     "async": "^2.6.0",
@@ -21,10 +22,10 @@
     "loopback-connector-postgresql": "^2.9.0",
     "loopback-connector-soap": "^3.0.1",
     "serve-favicon": "^2.0.1",
-    "strong-error-handler": "^2.0.0",
-    "uuid": "^3.2.1"
+    "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
+    "dotenv": "^5.0.1",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
     "nsp": "^2.1.0"

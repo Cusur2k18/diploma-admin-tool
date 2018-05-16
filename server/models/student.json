@@ -2,14 +2,11 @@
   "name": "Student",
   "plural": "students",
   "base": "BaseUser",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-    "Timestamps": {},
-    "Uuid": {}
-  },
+  "mixins": {},
   "properties": {
     "studentCode": {
       "type": "string",

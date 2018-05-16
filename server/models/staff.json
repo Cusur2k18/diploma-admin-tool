@@ -2,14 +2,11 @@
   "name": "Staff",
   "plural": "staffs",
   "base": "BaseUser",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {
-    "Timestamps": {},
-    "Uuid": {}
-  },
+  "mixins": {},
   "properties": {
     "digitalSignature": {
       "type": "string"

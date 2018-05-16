@@ -2,15 +2,19 @@
   "name": "Enrollment",
   "plural": "enrollments",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "mixins": {
-    "Timestamps": {},
-    "Uuid": {}
+    "Timestamps": {}
   },
   "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "guid"
+    },
     "eventId": {
       "type": "string",
       "required": true
