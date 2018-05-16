@@ -24,11 +24,6 @@
     },
     "mLastName": {
       "type": "string"
-    },
-    "email": {
-      "type": "string",
-      "required": true,
-      "default": "noreply@cusur.com"
     }
   },
   "validations": [],

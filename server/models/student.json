@@ -18,6 +18,11 @@
     },
     "careerGrade": {
       "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": false,
+      "default": ""
     }
   },
   "validations": [],
