@@ -41,10 +41,6 @@
     },
     "coverImg": {
       "type": "string"
-    },
-    "qrCode": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
