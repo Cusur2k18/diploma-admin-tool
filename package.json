@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "migrate": "node server/scripts/migrations/migrations.js"
+    "migrate": "node server/scripts/migrations/migrations.js",
+    "seed:roles": "node server/scripts/seeds/create-roles.js",
+    "seed:admin": "node server/scripts/seeds/create-admin.js"
   },
   "dependencies": {
     "async": "^2.6.0",
