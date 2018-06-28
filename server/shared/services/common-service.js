@@ -24,7 +24,7 @@ class CommonService {
 
       if (err) return next(new Error(err))
 
-      ctx.req.body.accountid = instance.id
+      ctx.req.body.accountId = instance.id
       next();
     })
   }
