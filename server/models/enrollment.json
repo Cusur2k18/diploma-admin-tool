@@ -30,7 +30,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "event": {
+      "type": "belongsTo",
+      "model": "Event",
+      "foreignKey": "eventId"
+    },
+    "patient": {
+      "type": "belongsTo",
+      "model": "Student",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

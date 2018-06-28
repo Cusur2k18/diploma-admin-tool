@@ -52,7 +52,7 @@
     "students": {
       "type": "hasMany",
       "model": "Student",
-      "foreignKey": "userId",
+      "foreignKey": "eventId",
       "options": {
         "nestRemoting": true
       },

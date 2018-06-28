@@ -9,10 +9,11 @@ class CommonService {
    * @description This method executes on beforeRemote('create') and creates the parent record of the newly entity
    * @static
    * @param {*} ctx
+   * @param {*} modelInstance
    * @param {*} next
    * @memberof BaseApiService
    */
-  static createParentAccount(ctx, next) {
+  static createParentAccount(ctx, modelInstance, next) {
 
     const AccountModel = app.models.Account;
 

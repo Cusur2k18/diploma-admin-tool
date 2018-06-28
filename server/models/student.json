@@ -30,7 +30,7 @@
     "enrollments": {
       "type": "hasMany",
       "model": "Event",
-      "foreignKey": "",
+      "foreignKey": "userId",
       "options": {
         "nestRemoting": true
       },
