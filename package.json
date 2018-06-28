@@ -24,6 +24,7 @@
     "loopback-component-visualizer": "^1.2.1",
     "loopback-connector-postgresql": "^2.9.0",
     "loopback-connector-soap": "^3.0.1",
+    "morgan": "^1.9.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0"
   },
