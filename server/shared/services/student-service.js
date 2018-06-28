@@ -28,11 +28,13 @@ class StudentService extends BaseApiService {
    * @memberof StudentService
    */
   static signin(studentCode, nip, cb) {
+    const AccountModel = app.models.Account;
     const udgalumnoModel = app.models.DatosAlumno;
 
     
     /** 
      * 1.- VALIDATE DATA WITH UDG DATABASE
+     * 2.- FIND OR CRATE THE PARENT ACCOUNT
      * 2.- FIND OR CREATE THE STUDENT IN OUR DB BASED ON THE STUDENT CODE
      * 3.- LOGIN THE USER WE CREATED OR FOUND
     */
@@ -45,6 +47,22 @@ class StudentService extends BaseApiService {
       },
       (data, callback) => {
 
+        const accData = {
+          name: `S-Acc-${data.codigo}`
+        }
+
+        AccountModel.findOrCreate(
+          { where: {name: accData.name} }, 
+          accData, 
+          (err, instance) => {
+
+            if (err) return callback(new Error(err));
+
+            callback(null, Object.assign({}, data, {accountId: instance.toJSON().id}));
+          })
+      },
+      (data, callback) => {
+        
         if (data.error) return callback(new Error(data.error));
 
         let names = data.nombre.split(' '), 
@@ -56,7 +74,8 @@ class StudentService extends BaseApiService {
               lastName: names[0],
               mLastName: names[1],
               username: data.codigo,
-              password: data.nip
+              password: data.nip,
+              accountId: data.accountId
             }
 
         this.model.findOrCreate(

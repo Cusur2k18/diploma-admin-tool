@@ -24,6 +24,10 @@
     },
     "mLastName": {
       "type": "string"
+    },
+    "accountId": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],

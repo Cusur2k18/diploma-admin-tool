@@ -35,6 +35,15 @@
         "nestRemoting": true
       },
       "through": "Enrollment"
+    },
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": "accountId",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
     }
   },
   "acls": [

@@ -59,6 +59,10 @@
     "dataSource": "cusurdb",
     "public": true
   },
+  "Account": {
+    "dataSource": "cusurdb",
+    "public": true
+  },
   "soap_WSEscolarPortBinding": {
     "dataSource": "udg",
     "public": true

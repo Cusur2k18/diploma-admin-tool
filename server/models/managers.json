@@ -9,7 +9,17 @@
   "mixins": {},
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": "accountId",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
