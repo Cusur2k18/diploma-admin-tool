@@ -36,7 +36,7 @@
       "model": "Event",
       "foreignKey": "eventId"
     },
-    "patient": {
+    "student": {
       "type": "belongsTo",
       "model": "Student",
       "foreignKey": "userId"
