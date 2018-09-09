@@ -1,19 +1,15 @@
 {
   "name": "BaseUser",
   "base": "User",
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "mixins": {
-    "Timestamps": {}
+    "Timestamps": {},
+    "Uuid": {}
   },
   "properties": {
-    "id": {
-      "type": "string",
-      "id": true,
-      "defaultFn": "guid"
-    },
     "firstName": {
       "type": "string",
       "required": true
@@ -24,10 +20,6 @@
     },
     "mLastName": {
       "type": "string"
-    },
-    "accountId": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],

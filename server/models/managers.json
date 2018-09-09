@@ -2,12 +2,20 @@
   "name": "Managers",
   "plural": "managers",
   "base": "BaseUser",
-  "idInjection": false,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {},
-  "properties": {},
+  "mixins": {
+    "Timestamps": {},
+    "Uuid": {}
+  },
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "required": true
+    }
+  },
   "validations": [],
   "relations": {
     "account": {
@@ -16,7 +24,7 @@
       "foreignKey": "accountId",
       "options": {
         "nestRemoting": true,
-        "disableInclude": true
+        "disableInclude": false
       }
     }
   },
