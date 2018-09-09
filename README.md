@@ -62,6 +62,19 @@ and
 npm run seed:roles && npm run seed:admin
 ```
 
+Since we need to read environmental variables, we use [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) to start the server:
+
+```bash
+heroku local
+```
+
+That should start a dev server on `localhost:5000`.
+
+
+## ERD
+
+![ERD](http://res.cloudinary.com/crystalstream/image/upload/v1536509401/ECE-ERD.png)
+
 ## Notes
 
 * After inster on `Managers`:
