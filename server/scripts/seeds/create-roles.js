@@ -19,9 +19,11 @@ function CreateRoles() {
     })
   ]).then( result => {
     console.log('Succesfully created Rol: Admin & Student');
+    process.exit(0)
   })
   .catch( error => {
     console.log('error seeding db: ', error);
+    process.exit(1)
   })
 }
 

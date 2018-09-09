@@ -31,6 +31,7 @@ function CreateUser() {
   ], (err, result) => {
     if ( err ) throw err 
     console.log('Succesfully created an student user');
+    process.exit(0);
   })
 }
 
