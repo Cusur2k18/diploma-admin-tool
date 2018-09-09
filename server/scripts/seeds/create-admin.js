@@ -29,6 +29,7 @@ function CreateUser() {
   ], (err, result) => {
     if ( err ) throw err 
     console.log('Succesfully created an admin user');
+    process.exit(0)
   })
 }
 
