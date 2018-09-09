@@ -20,3 +20,4 @@ npm-debug.log
 .env
 
 /server/*.local.js
+/server/*.local.json
