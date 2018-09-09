@@ -45,10 +45,16 @@ Then create a `datasource.local.json` or `datasource.local.js` file under `serve
 }
 ```
 
-after that you can run the migrations to create the database:
+after that you can run the migrations and the seeds to create and populate the database:
 
 ```bash
 npm run migrate
+```
+
+and
+
+```bash
+npm run seed:roles && npm run seed:admin
 ```
 
 ## Notes
