@@ -18,7 +18,6 @@ npm install
 
 Then create a `datasource.local.json` or `datasource.local.js` file under `server/` with the following:
 
-
 ```javascript
 {
   "db": {
@@ -43,6 +42,12 @@ Then create a `datasource.local.json` or `datasource.local.js` file under `serve
     "connector": "postgresql"
   }
 }
+```
+
+Then create an `.env` file on the root directory and fill it with the following:
+
+```
+UDG_SOAP_SERVICE_URL=<WSDL_UDG>
 ```
 
 after that you can run the migrations and the seeds to create and populate the database:
