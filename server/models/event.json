@@ -50,9 +50,11 @@
       "model": "Student",
       "foreignKey": "eventId",
       "options": {
-        "nestRemoting": true
+        "nestRemoting": true,
+        "disableInclude": false
       },
-      "through": "Enrollment"
+      "through": "Enrollment",
+      "keyThrough": "userId"
     },
     "account": {
       "type": "belongsTo",
@@ -60,7 +62,7 @@
       "foreignKey": "accountId",
       "options": {
         "nestRemoting": true,
-        "disableInclude": true
+        "disableInclude": false
       }
     }
   },

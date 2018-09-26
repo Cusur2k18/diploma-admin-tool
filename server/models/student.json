@@ -37,7 +37,8 @@
       "options": {
         "nestRemoting": true
       },
-      "through": "Enrollment"
+      "through": "Enrollment",
+      "keyThrough": "eventId"
     },
     "account": {
       "type": "belongsTo",

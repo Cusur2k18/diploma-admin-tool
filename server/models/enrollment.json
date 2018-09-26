@@ -21,7 +21,6 @@
     },
     "attended": {
       "type": "boolean",
-      "required": true,
       "default": false
     }
   },
