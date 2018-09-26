@@ -9,13 +9,13 @@ module.exports = {
     "connector": "soap"
   },
   cusurdb: {
-    "host": "localhost",
+    "host": process.env.DB_HOST,
     "port": 5432,
     "url": "",
-    "database": "cusurdb",
-    "password": "",
+    "database": process.env.DB_NAME,
+    "password": process.env.DB_PASS,
     "name": "cusurdb",
-    "user": "crystalstream",
+    "user": process.env.DB_USER,
     "connector": "postgresql"
   }
 }

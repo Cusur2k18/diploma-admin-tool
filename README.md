@@ -16,38 +16,14 @@ and install all the dependencies (run this under the root directory):
 npm install
 ```
 
-Then create a `datasource.local.json` or `datasource.local.js` file under `server/` with the following:
-
-```javascript
-{
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
-  "udg": {
-    "url": "",
-    "name": "udg",
-    "wsdl": "<WSDL_UDG>",
-    "remotingEnabled": true,
-    "connector": "soap"
-  },
-  "cusurdb": {
-    "host": "<db_host>",
-    "port": "5432",
-    "url": "<db_url>",
-    "database": "<db_name>",
-    "password": "<db_pass>",
-    "name": "cusurdb",
-    "user": "<db_user>",
-    "connector": "postgresql"
-  }
-}
-```
-
 Then create an `.env` file on the root directory and fill it with the following:
 
 ```
 UDG_SOAP_SERVICE_URL=<WSDL_UDG>
+DB_NAME=<DATABASE_NAME>
+DB_USER=<DATABASE_USER>
+DB_PASS=<DATABASE_PASS>
+DB_HOST=<DATABASE_HOST>
 ```
 
 after that you can run the migrations and the seeds to create and populate the database:
