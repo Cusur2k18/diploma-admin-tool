@@ -13,7 +13,7 @@ function CreateUser() {
     },
     (role, next) => {
       Account.create({
-        name: 'M-Acc-${new Date().getTime()}'
+        name: `M-Acc-${new Date().getTime()}`
       }, (error, acc) => {
         if(error) throw new Error(error)
         next(null, role, acc);
