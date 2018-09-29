@@ -8,6 +8,7 @@ function Migrate() {
     if (er) throw er;
     console.log('Loopback tables [' + tables + '] created in ', ds.adapter.name);
     ds.disconnect();
+    process.exit(0)
   });
 }
 
